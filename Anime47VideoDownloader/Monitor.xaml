@@ -1,0 +1,41 @@
+﻿<Window x:Class="Anime47VideoDownloader.Monitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Anime47VideoDownloader"
+        xmlns:cef="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        mc:Ignorable="d"
+        Title="Debug" Height="768" Width="1366">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!--<Grid Background="Red" Grid.ColumnSpan="4" Grid.RowSpan="3" MouseDown="Grid_MouseDown" Opacity="0.7">
+            <TextBlock Text="This is only for Administator and Dev Only!" FontSize="56" TextAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="White"/>
+            <TextBox x:Name="Verfity" VerticalAlignment="Bottom" Height="56" Background="Red" BorderBrush="Transparent" Foreground="Red"/>
+        </Grid>-->
+        <cef:ChromiumWebBrowser x:Name="b1"/>
+        <cef:ChromiumWebBrowser Grid.Column="1" x:Name="b2"/>
+        <cef:ChromiumWebBrowser Grid.Column="2" x:Name="b3"/>
+        <cef:ChromiumWebBrowser Grid.Column="3" x:Name="b4"/>
+        <cef:ChromiumWebBrowser Grid.Row="1" x:Name="b5"/>
+        <cef:ChromiumWebBrowser Grid.Row="1" Grid.Column="1" x:Name="b6"/>
+        <cef:ChromiumWebBrowser Grid.Row="1" Grid.Column="2" x:Name="b7"/>
+        <cef:ChromiumWebBrowser Grid.Row="1" Grid.Column="3" x:Name="b8"/>
+        <cef:ChromiumWebBrowser Grid.Row="2" x:Name="b9"/>
+        <cef:ChromiumWebBrowser Grid.Row="2" Grid.Column="1" x:Name="b10"/>
+        <cef:ChromiumWebBrowser Grid.Row="2" Grid.Column="2" x:Name="b11"/>
+        <cef:ChromiumWebBrowser Grid.Row="2" Grid.Column="3" x:Name="b12"/>
+        
+
+    </Grid>
+</Window>
